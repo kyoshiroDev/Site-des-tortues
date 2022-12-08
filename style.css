@@ -3,6 +3,8 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
@@ -62,7 +64,7 @@ H1 {
   font-weight: 500px;
 }
 
-article p, .mission {
+article, .mission, .ressources{
   display: block;
   height: auto;
   font-size: 36px;
@@ -102,4 +104,8 @@ h3{
   padding: 50px;
   font-size: 24px;
   text-align: center;
+}
+
+.ressources ul{
+  padding: 0;
 }
