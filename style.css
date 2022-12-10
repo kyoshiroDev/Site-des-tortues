@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url( '? 0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
 
 * {
   padding: 0;
@@ -8,6 +8,7 @@
 }
 
 body {
+font-family: Poppins, serif, sans-serif;
 width: 100vw;
 }
 
@@ -98,6 +99,7 @@ h3{
   display: block;
   font-size: 48px;
   color: rgb(198, 166, 100);
+  padding-top: 20px;
 }
 
 .tortue {
@@ -114,7 +116,35 @@ h3{
   padding: 0;
 }
 
+footer {
+  background-color: rgb(198, 166, 100);
+}
+
 .footertitle{
-  color: green;
-  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 87, 0);
+  font-size: 70px;
+
+}
+
+.mainfooter{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: #383b3d;
+  font-size: 35px;
+}
+
+.liens-footer {
+  color: rgb(0, 87, 0);
+  text-decoration: none;
+}
+
+.acces, iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
