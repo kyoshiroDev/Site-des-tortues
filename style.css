@@ -124,7 +124,9 @@ h3{
 }
 
 footer {
+  position: bottom;
   background-color: rgb(198, 166, 100);
+
 }
 
 .footertitle{
