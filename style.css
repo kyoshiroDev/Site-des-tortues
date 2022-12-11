@@ -22,7 +22,9 @@ header .logo {
 }
 
 .logo a{
-  max-height: max-content;
+  position: absolute;
+  width: 270px;
+  height: 100px;
 }
 
 .nav-links {
