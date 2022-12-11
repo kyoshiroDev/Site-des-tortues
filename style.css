@@ -20,6 +20,7 @@ height: 100vh;
   align-items: center;
   width: auto;
   height: 150px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .nav-links {
