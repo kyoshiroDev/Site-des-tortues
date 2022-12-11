@@ -21,7 +21,7 @@ header .logo {
   height: 100px;
 }
 
-.logo{
+.logo a{
   max-height: max-content;
 }
 
