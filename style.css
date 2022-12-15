@@ -77,14 +77,10 @@ article, .mission, .ressources{
   flex-direction: column;
   font-size: 2rem;
   color: #6c757d;
-  text-align: ;
+  text-align: center;
   padding: 1rem;
   margin: 2rem;
   box-shadow: 5px 0px 10px 0px black;
-}
-
-.ressources p{
-  padding-bottom: 30px;
 }
 
 .mission{
@@ -112,21 +108,25 @@ h3{
 }
 
 .tortue, img {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-align: center;
-  padding:20px
+  padding:20px;
+  margin: auto;
 }
 
 .ressources ul{
-  padding: 0;
+  padding: 1rem;
 }
 
 footer {
   position: bottom;
   background-color: rgb(198, 166, 100);
-
+  width: 100%;
 }
 
 .footertitle{
@@ -134,8 +134,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   color: rgb(0, 87, 0);
-  font-size: 4.5rem;
-
+  font-size: 3rem;
 }
 
 .mainfooter{
@@ -158,7 +157,7 @@ footer {
   width: 100%;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:870px) {
 
   h2{
     margin-left: 5%;
@@ -172,7 +171,9 @@ footer {
   .logo {
     position: absolute;
     float: left;
-    margin-top: -80px;
+    margin-top: -60px;
+    margin-left: -60px;
+    width: 300px;
   }
 
   .nav-links {
@@ -185,7 +186,7 @@ footer {
     width: 100vw;
     height: 60px;
     list-style: none;
-    font-size: 20px;
+    font-size: 0.8rem;
     top: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0);
@@ -227,41 +228,33 @@ footer {
     padding: 15px;
   }
 
-  .tortue{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: auto;
-    margin: auto;
-    font-size: 15px;
+  .tortue, img{
+    width: 50%;
   }
 
   footer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(198, 166, 100);
-    height: 350px;
   }
   
   .footertitle{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: left;
     color: rgb(0, 87, 0);
-    font-size: 30px;
-  
+    font-size: 2.5rem;
   }
   
   .mainfooter{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between;
     color: #383b3d;
-    font-size: 25px;
+    font-size: 1.5rem;
     width: 100%;
     padding: 10px;
+    text-align: center;
   }
   
   .liens-footer {
@@ -273,16 +266,28 @@ footer {
     display: flex;
     flex-direction: column;
     width:auto;
-    height: 320px ;
+    height: 320px;
     padding-top: 10px;
     padding-right: 5px;
   }
 
   footer p, ul, li{
-    font-size: 20px;
+    font-size: 2rem;
+    padding-right: 10px;
   }
 
   .ressources p{
     padding: 0;
   }
+}
+
+@media screen and (min-width:1600px) {
+  .mainfooter{
+    justify-content:space-around;
+}
+
+.footertitle{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 }
