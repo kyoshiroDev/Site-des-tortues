@@ -7,23 +7,22 @@
   list-style-type: none;
 }
 
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   font-family: Poppins, serif, sans-serif;
   width: 100vw;
   height: 100vh;
 }
 
-header{
-  background-color: rgba(255, 255, 255, 0) ;
-}
-
   .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 150px;
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: auto;
 }
 
 .nav-links {
@@ -33,10 +32,9 @@ header{
   justify-content:space-evenly;
   align-items: center;
   top: -500vw;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   list-style: none;
-  font-size: 36px;
   background-color: rgba(255, 255, 255, 0.863) ;
   transition: all 0.5s ease-out;
 }
@@ -44,15 +42,16 @@ header{
 .nav-links a, h2 {
   color: green;
   text-decoration: none;
-
+  font-size: 2rem;
 }
 
 .menu-hamburger {
-  position: fixed;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  top: 8px;
-  right: 50px;
+  top: 0.5rem;
+  right: 1rem;
+  width: 7em;
 }
 
 .mobile-menu {
@@ -60,26 +59,27 @@ header{
 }
 
 h1 {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-image: url(Images/bandeau-nav.jpg);
   width: 100%;
   height: 200px;
-  font-size: 70px;
+  font-size: 5rem;
   color: rgb(1, 1, 83);
   font-weight: 500px;
-  margin-top: -40px;
+  margin-top: -60px;
   text-align: center;
   padding-top: 70px;
 }
 
 article, .mission, .ressources{
-  display: block;
-  height: auto;
-  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
   color: #6c757d;
-  text-align: justify;
-  padding: 2em;
-  margin: 1.5em;
+  text-align: ;
+  padding: 1rem;
+  margin: 2rem;
   box-shadow: 5px 0px 10px 0px black;
 }
 
@@ -90,27 +90,31 @@ article, .mission, .ressources{
 .mission{
   background: rgb(0, 87, 0);
   color: white;
+  text-align: justify;
 }
 
 h2 {
-  display: block;
-  font-size: 52px;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
   text-align: left;
   padding-top: 20px;
-  margin-left: 50px;
+  margin-left: 26px;
 }
 
 h3{
-  display: block;
-  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5rem;
   color: rgb(198, 166, 100);
   padding-top: 20px;
+  text-align: left;
 }
 
 .tortue, img {
   display: block;
   width: 100%;
-  font-size: 24px;
+  font-size: 2rem;
   text-align: center;
   padding:20px
 }
@@ -130,7 +134,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   color: rgb(0, 87, 0);
-  font-size: 70px;
+  font-size: 4.5rem;
 
 }
 
@@ -139,7 +143,7 @@ footer {
   flex-direction: column;
   padding: 30px;
   color: #383b3d;
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 .liens-footer {
@@ -156,13 +160,9 @@ footer {
 
 @media screen and (min-width:960px) {
 
-  h2 {
-  font-size: 25px;
-  margin-left: 190px;
-}
-
-  h1 {
-    font-size: 60px;
+  h2{
+    margin-left: 5%;
+    margin-bottom: 3rem;
   }
 
   .menu-hamburger {
@@ -170,17 +170,16 @@ footer {
   }
 
   .logo {
-    justify-content: left;
-    align-items: center;
-    width: 200px;
-    height: 100px;
+    position: absolute;
+    float: left;
+    margin-top: -80px;
   }
 
   .nav-links {
     position: absolute;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
     justify-content: space-evenly;
     align-items: top;
     width: 100vw;
@@ -191,6 +190,19 @@ footer {
     bottom: 0;
     background-color: rgba(255, 255, 255, 0);
     padding-left: 180px;
+  }
+
+  h1 {
+    display: flex;
+    background-image: url(Images/bandeau-nav.jpg);
+    width: 100%;
+    height: 200px;
+    font-size: 5rem;
+    color: rgb(1, 1, 83);
+    font-weight: 500px;
+    margin-top:60px;
+    text-align: center;
+    padding-top: 70px;
   }
 
   article, .mission, .ressources{
@@ -213,11 +225,6 @@ footer {
     justify-content: left;
     margin: 0;
     padding: 15px;
-  }
-
-  h3{
-    font-size: 25px;
-    text-align: left;
   }
 
   .tortue{
@@ -268,6 +275,7 @@ footer {
     width:auto;
     height: 320px ;
     padding-top: 10px;
+    padding-right: 5px;
   }
 
   footer p, ul, li{
