@@ -66,13 +66,14 @@ body {
 h1 {
   display: flex;
   flex-direction: column;
+  background-image: url(Images/bandeau-nav.jpg);
   background-color: rgba(198, 165, 100, 0.808);
   width: 100%;
   height: 150px;
   font-size: 5rem;
-  color: rgb(0,87,0);
+  color: rgb(255, 255, 255);
   font-weight: 500px;
-  margin-top: -40px;
+  margin-top: -60px;
   text-align: center;
   padding-top: 40px;
 }
@@ -82,7 +83,7 @@ article, .mission, .ressources {
   flex-direction: column;
   font-size: 2rem;
   color: #6c757d;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   padding: 1.5rem;
   box-shadow: 5px 0px 10px 0px black;
@@ -101,7 +102,6 @@ h2 {
   font-size: 2.5rem;
   text-align: left;
   padding-top: 20px;
-  margin-left: 1.5rem;
 }
 
 h3 {
@@ -238,7 +238,7 @@ main {
   .logo {
     position: absolute;
     float: left;
-    margin-top: -30px;
+    margin-top: -60px;
     margin-left: 50px;
   }
 
