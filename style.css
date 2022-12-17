@@ -7,14 +7,14 @@
   list-style-type: none;
 }
 
-html{
+html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
   font-family: Poppins, serif, sans-serif;
-  width: 100vw;
+  width: auto;
   height: 100vh;
 }
 
@@ -45,13 +45,18 @@ body {
   font-size: 2rem;
 }
 
+.nav-links :hover {
+  text-decoration:underline;
+  color: green;
+}
+
 .menu-hamburger {
   position: absolute;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  top: 0.5rem;
+  top: 1rem;
   right: 1rem;
-  width: 7em;
+  width: 5em;
 }
 
 .mobile-menu {
@@ -61,29 +66,30 @@ body {
 h1 {
   display: flex;
   flex-direction: column;
-  background-image: url(Images/bandeau-nav.jpg);
-  width: 100vw;
-  height: 200px;
+  background-color: rgba(198, 165, 100, 0.808);
+  width: 100%;
+  height: 150px;
   font-size: 5rem;
-  color: rgb(1, 1, 83);
+  color: rgb(0,87,0);
   font-weight: 500px;
-  margin-top: -60px;
+  margin-top: -40px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
-article, .mission, .ressources{
+article, .mission, .ressources {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
   color: #6c757d;
   text-align: center;
-  padding: 1rem;
-  margin: 2rem;
+  justify-content: center;
+  padding: 1.5rem;
   box-shadow: 5px 0px 10px 0px black;
+  margin-top: 2rem;
 }
 
-.mission{
+.mission {
   background: rgb(0, 87, 0);
   color: white;
   text-align: justify;
@@ -92,13 +98,13 @@ article, .mission, .ressources{
 h2 {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   padding-top: 20px;
-  margin-left: 26px;
+  margin-left: 1.5rem;
 }
 
-h3{
+h3 {
   display: flex;
   flex-direction: column;
   font-size: 3.5rem;
@@ -112,15 +118,13 @@ h3{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70%;
   font-size: 1.1rem;
   text-align: center;
-  padding:20px;
+  padding:1rem;
+  padding-top: 0;
   margin: auto;
-}
-
-.ressources ul{
-  padding: 1rem;
+  margin-top: 1rem;
 }
 
 footer {
@@ -133,37 +137,49 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   color: rgb(0, 87, 0);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
-.mainfooter{
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  color: #383b3d;
+.footertitle p{
   font-size: 2rem;
 }
 
-.liens-footer {
+.mainfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2rem;
+  color: #383b3d;
+  font-size: 1.5rem;
+}
+
+.liens-footer{
+  font-size: 2rem;
+}
+
+.liens-footer a {
   color: rgb(0, 87, 0);
   text-decoration: none;
+  font-size: 2rem;
 }
 
 .acces, iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 30rem;
 }
 
-main{
-  width: 80%;
+main {
+  width: 90vw;
   margin: auto;
-  margin-top: 1rem;
 }
 
-.form-contact{
+.form-contact {
   width: 90%;
   margin: auto;
   margin-top: 30px;
@@ -175,14 +191,14 @@ main{
   border-radius: 10px;
 }
 
-.form-contact h2{
+.form-contact h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
   margin-right: 22px;
 }
 
-.bouton{
+.bouton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +207,7 @@ main{
   margin-top: 20px;
 }
 
-.contact-content{
+.contact-content {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -202,7 +218,11 @@ main{
 
 @media screen and (min-width:870px) {
 
-  h2{
+  main {
+    width: 90%;
+  }
+
+  h2 {
     margin-left: 5%;
     margin-bottom: 3rem;
   }
@@ -214,9 +234,8 @@ main{
   .logo {
     position: absolute;
     float: left;
-    margin-top: -60px;
-    margin-left: -60px;
-    width: 300px;
+    margin-top: -30px;
+    margin-left: 50px;
   }
 
   .nav-links {
@@ -226,7 +245,7 @@ main{
     flex-wrap:nowrap;
     justify-content: space-evenly;
     align-items: top;
-    width: 100vw;
+    width: 100%;
     height: 60px;
     list-style: none;
     font-size: 0.8rem;
@@ -238,79 +257,65 @@ main{
 
   h1 {
     display: flex;
-    background-image: url(Images/bandeau-nav.jpg);
-    width: 100%;
-    height: 200px;
-    font-size: 5rem;
-    color: rgb(1, 1, 83);
-    font-weight: 500px;
-    margin-top:60px;
-    text-align: center;
-    padding-top: 70px;
+    margin-top: 60px;
   }
 
-  article, .mission, .ressources{
-    font-size: 20px;
+  h2{
+    margin-left: 0;
+  }
+
+  article, .mission, .ressources {
     width: 90%;
     margin: auto;
+    margin-top: 2rem;
     text-align: justify;
   }
 
-  .mission-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 60px;
-    margin-top: 30px;
+  .mission-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 
-  .mission{
+  .mission {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    margin: 0;
-    padding: 15px;
+    justify-content: start;
+    margin: 2rem;
+    padding: 1.5rem;
   }
 
-  .tortue, img{
+  .tortue, img {
     width: 50%;
+    margin-top: 1.5rem;
   }
 
   footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   
-  .footertitle{
+  .footertitle {
     display: flex;
     flex-direction: row;
     align-items: left;
-    color: rgb(0, 87, 0);
-    font-size: 2.5rem;
   }
   
   .mainfooter{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    color: #383b3d;
-    font-size: 1.5rem;
     width: 100%;
-    padding: 10px;
-    text-align: center;
   }
   
-  .liens-footer {
-    color: rgb(0, 87, 0);
-    text-decoration: none;
+  .liens-footer :hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 87, 0);
   }
   
   .acces, iframe {
-    display: flex;
-    flex-direction: column;
     width:auto;
     height: 320px;
-    padding-top: 10px;
     padding-right: 5px;
   }
 
@@ -325,12 +330,13 @@ main{
 }
 
 @media screen and (min-width:1600px) {
+
+  .mission-content{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   .mainfooter{
     justify-content:space-around;
-}
-
-.footertitle{
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
+  }
 }
