@@ -191,18 +191,19 @@ main {
   border-radius: 10px;
 }
 
-.form-contact h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  margin-right: 22px;
+.form-contact {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin: auto;
+  width: 60%;
 }
 
 .bouton {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 90px;
   margin: auto;
   margin-top: 20px;
 }
@@ -210,10 +211,13 @@ main {
 .contact-content {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   text-align: justify;
   font-size: 1.5rem;
-  padding-left: 40px;
+  width: 60%;
+  margin: auto;
 }
 
 @media screen and (min-width:870px) {
@@ -293,6 +297,7 @@ main {
   footer {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 4rem;
   }
   
   .footertitle {
@@ -327,6 +332,19 @@ main {
   .ressources p{
     padding: 0;
   }
+
+  .contact-content{
+    margin: auto;
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .form-contact{
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
 }
 
 @media screen and (min-width:1600px) {
