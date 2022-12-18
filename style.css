@@ -242,10 +242,11 @@ main {
 
   .logo {
     position:absolute;
+    width: 17rem;
     z-index: 2;
     float: left;
     margin-top: -60px;
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   .nav-links {
