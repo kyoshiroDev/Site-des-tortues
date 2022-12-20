@@ -219,7 +219,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90px;
+  width: 110px;
   margin: auto;
   margin-top: 20px;
 }
